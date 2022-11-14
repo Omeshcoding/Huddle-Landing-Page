@@ -1,120 +1,142 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-:root{
-    --Violet: hsl(257, 40%, 49%);
-    --Soft-Magenta: hsl(300, 69%, 71%);
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(./images/bg-desktop.svg);
+  background-color: var(--Violet);
+}
+/* LOGO */
+.logo {
+  margin: 3.6rem 4.5rem;
+}
+.logo img {
+  width: 17%;
+}
 
-*{
-    margin:0;
-    padding:0;
+.main-section {
+  margin: 5rem 0 0 5rem;
 }
-body{
-    background-image: url(./images/bg-desktop.svg);
-    background-color:var(--Violet);
+.flex {
+  display: flex;
+  gap: 2rem;
 }
-.logo{
-    margin: 5rem 0 3.5rem 8rem;
+.content {
+  padding: 1.858rem 0 0 1.42rem;
+  flex: 40%;
 }
-.main-section{
-    margin: 8rem 8rem;
+.title-text {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 1.2px;
+  margin-top: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  padding-right: 3rem;
 }
-.flex{
-    display: flex;
+.title-content {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 1.478;
+  margin-top: 1.83rem;
+  font-family: 'Open Sans', sans-serif;
+  padding-right: 4rem;
 }
-.content{
-    padding:4rem;
-}
-.title-text{
-    color: #fff;
-    font-size: 40px;
-    letter-spacing: 1.2px;
-    margin-top:1.5rem;
-    font-family: 'Poppins', sans-serif;
-}
-.title-content{
-    color: #fff;
-    font-size: 20px;
-    letter-spacing: 1px;
-    margin-top: 1.5rem;
-    font-family: 'Open Sans', sans-serif;
+
+.illustration {
+  flex: 50%;
+  /* width: 50%; */
 }
 /* button */
-.btn{
-    background-color: #fff;
-    padding: 1.2rem 4.2rem;
-    border: none;
-    border-radius: 30px;
-    font-size: 20px;
-    margin-top: 1.5rem;
-    color: var(--Violet);
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 1px;
+.btn {
+  background-color: #fff;
+  padding: 1.08rem 4.15rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  margin: 1.7rem 0 0 0.3rem;
+  color: var(--Violet);
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
 }
-.btn:hover{
-    background-color: var(--Soft-Magenta);
-    color: #fff;
+.btn:hover {
+  background-color: var(--Soft-Magenta);
+  color: #fff;
 }
 
 /* footer -section */
-footer{   
-    display: flex;
-    justify-content: flex-end; 
-    margin:3rem;
-    font-size: 1.5rem;
+footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.4rem 2.378rem;
+  font-size: 1.2rem;
 }
-.fab{
-    color:#fff;
-    border:solid  #fff 1px;
-    border-radius:50%;
-    padding:10px;
-    margin:1rem;
+.fab {
+  color: #fff;
+  border: solid #fff 1px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0.6rem;
 }
-.fab:hover{
-    color:var(--Soft-Magenta);
-    /* border:var(--Violet); */
-    border:solid  var(--Soft-Magenta) 2px;
+.fab:hover {
+  color: var(--Soft-Magenta);
+  /* border:var(--Violet); */
+  border: solid var(--Soft-Magenta) 2px;
 }
-.fa-facebook-f{
-   font-size:1.2 ;
-   padding: 10px 15px;
+.fa-facebook-f {
+  font-size: 1.2;
+  padding: 10px 15px;
 }
 
+/* Attribution */
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.attribution a {
+  color: hsl(229, 100%, 90%);
+}
 
 /* Media -Queries */
-@media screen and (max-width:1200px) {
-  .main-section{
-      margin:0;
-    }
-    .logo{
-        text-align: center;
-        margin:80px auto;
-        
+@media screen and (max-width: 1200px) {
+  .main-section {
+    margin: 0;
   }
-    .flex{
-        display:flex;
-        flex-direction: column;
-    }
-    .content{
-        margin:0 auto;
-        width: 60%;
-        text-align: center;
-    }
-    .illustration{
-        margin:0;
-    }
-    .illustration img{
-        display: grid;
-        place-items: center;
-        width:90%;
-        margin:0 auto;
-        /* text-align: center; */
-    }
-    footer{
-        display: flex;
-        justify-content: center;
-        margin: 80px auto;
-    }
+  .logo {
+    text-align: center;
+    margin: 80px auto;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+  }
+  .illustration {
+    margin: 0;
+  }
+  .illustration img {
+    display: grid;
+    place-items: center;
+    width: 90%;
+    margin: 0 auto;
+    /* text-align: center; */
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+  }
 }
